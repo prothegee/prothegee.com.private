@@ -8,7 +8,9 @@
         "envProjectVersion": "v1.0.0",
         "envMongoDbMainConnection": "mongodb://localhost:27017",
         "envMongoDbMainDatabase": "prothegee_production",
-        "m_defaultSalt": "eaeuCWR3TQEMXVWuyXj6TvTJYfK2L7vvqhQ6hEH3yK3c9SHpy35fQKKpCaeWhma9"
+        "m_defaultSalt": "eaeuCWR3TQEMXVWuyXj6TvTJYfK2L7vvqhQ6hEH3yK3c9SHpy35fQKKpCaeWhma9",
+        "m_kyP": 762123635,
+        "m_ivP": 976637461
     },
     "ssl": {
         "cert": "../../prothegee.com.private/ssl/TBA/TBD.pem",

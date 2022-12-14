@@ -8,7 +8,9 @@
         "envProjectVersion": "v1.0.0",
         "envMongoDbMainConnection": "mongodb://localhost:27017",
         "envMongoDbMainDatabase": "prothegee_staging",
-        "m_defaultSalt": "CBRGWGa25egm2xRERkfKxZFpmUgU45CAUrpq2DnkLCVa8geWfD8XjCJkrMze9e6m"
+        "m_defaultSalt": "CBRGWGa25egm2xRERkfKxZFpmUgU45CAUrpq2DnkLCVa8geWfD8XjCJkrMze9e6m",
+        "m_kyP": 976573028,
+        "m_ivP": 279203156
     },
     "listeners": [
         {
