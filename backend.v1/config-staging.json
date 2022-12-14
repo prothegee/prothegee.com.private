@@ -7,7 +7,8 @@
         "envProjectName": "prothegee-com-backendv1",
         "envProjectVersion": "v1.0.0",
         "envMongoDbMainConnection": "mongodb://localhost:27017",
-        "envMongoDbMainDatabase": "prothegee_staging"
+        "envMongoDbMainDatabase": "prothegee_staging",
+        "m_defaultSalt": "CBRGWGa25egm2xRERkfKxZFpmUgU45CAUrpq2DnkLCVa8geWfD8XjCJkrMze9e6m"
     },
     "listeners": [
         {

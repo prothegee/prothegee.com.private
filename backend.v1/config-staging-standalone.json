@@ -7,7 +7,8 @@
         "envProjectName": "prothegee-com-backendv1",
         "envProjectVersion": "v1.0.0",
         "envMongoDbMainConnection": "mongodb://localhost:27017",
-        "envMongoDbMainDatabase": "prothegee_staging"
+        "envMongoDbMainDatabase": "prothegee_staging",
+        "m_defaultSalt": "wrvbgueGmUeYw5q5bmgZSDRVxAs6es2WVnGsCSNFscWJfVcPKwUHhnd9SL3wbMaf"
     },
     "ssl": {
         "cert": "../../prothegee.com.private/ssl/TBA/TBD.pem",
