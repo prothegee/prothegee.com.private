@@ -5,7 +5,9 @@
         "envRelease": false,
         "envDomain": "localhost.com:7001",
         "envProjectName": "prothegee-com-backendv1",
-        "envProjectVersion": "v1.0.0"
+        "envProjectVersion": "v1.0.0",
+        "envMongoDbMainConnection": "mongodb://localhost:27017",
+        "envMongoDbMainDatabase": "prothegee_devel"
     },
     "listeners": [
         {
