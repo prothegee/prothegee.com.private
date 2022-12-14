@@ -1,0 +1,9 @@
+{
+    "cmake.generator": "Ninja",
+    "cmake.configureSettings":
+    {
+        "CMAKE_TOOLCHAIN_FILE": "~/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "CMAKE_CXX_FLAGS": "/std:c++20 /EHsc",
+        "cmake.buildDirectory": "${workspaceFolder}/build",
+    }
+}
