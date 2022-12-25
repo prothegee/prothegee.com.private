@@ -2,7 +2,7 @@
     "custom_config": {
         "envDevel": true,
         "envStaging": false,
-        "envRelease": false,
+        "envProduction": false,
         "envDomain": "localhost.com:7001",
         "envProjectName": "prothegee-com-backendv1",
         "envProjectVersion": "v1.0.0",
