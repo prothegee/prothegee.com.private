@@ -7,7 +7,11 @@
         "envProjectName": "prothegee-com-backendv1",
         "envProjectVersion": "v1.0.0",
         "envMongoDbMainConnection": "mongodb://localhost:27017",
-        "envMongoDbMainDatabase": "prothegee_staging",
+        "envMongoDbMainDatabase": "prothegeedb_staging",
+        "envSparkPostApiSender": "no-reply@notification.prothegee.com",
+        "envSparkPostApiUrl": "https://api.sparkpost.com",
+        "envSparkPostApiTransmissionsPath": "/api/v1/transmissions",
+        "envSparkPostApiKey": "1d81570ce1910ce87576b2277550e495045cf603",
         "m_defaultSalt": "CBRGWGa25egm2xRERkfKxZFpmUgU45CAUrpq2DnkLCVa8geWfD8XjCJkrMze9e6m",
         "m_kyP": 976573028,
         "m_ivP": 279203156
