@@ -1,25 +1,24 @@
 {
     "custom_config": {
-        "m_isDevel": true,
-        "m_isStaging": false,
-        "m_isProduction": false,
+        "m_isDevel": true, // DOUBLE CHECK
+        "m_isStaging": false, // DOUBLE CHECK
+        "m_isProduction": false, // DOUBLE CHECK
 
-        "m_envPort": ":7001",
-        "m_envDomain": "localhost.com",
-        "m_envProjectName": "prothegee-com-backendv1",
-        "m_envProjectVersion": "v1.0.0",
+        "m_envPort": ":7001", // DOUBLE CHECK
+        "m_envDomain": "localhost.com", // DOUBLE CHECK
+        "m_envProjectName": "prothegee-com-backendv1", // DOUBLE CHECK
+        "m_envProjectVersion": "v1.0.0", // DOUBLE CHECK
 
-        "m_envMongoDbMainConnection": "mongodb://localhost:27017",
-        "m_envMongoDbMainDatabase": "prothegeedb_devel",
+        "m_envSparkPostApiSender": "no-reply@notification.prothegee.com", // DOUBLE CHECK
+        "m_envSparkPostApiUrl": "https://api.sparkpost.com", // DOUBLE CHECK
+        "m_envSparkPostApiTransmissionsPath": "/api/v1/transmissions", // DOUBLE CHECK
+        "m_envSparkPostApiKey": "1d81570ce1910ce87576b2277550e495045cf603", // DOUBLE CHECK
 
-        "m_envSparkPostApiSender": "no-reply@notification.prothegee.com",
-        "m_envSparkPostApiUrl": "https://api.sparkpost.com",
-        "m_envSparkPostApiTransmissionsPath": "/api/v1/transmissions",
-        "m_envSparkPostApiKey": "1d81570ce1910ce87576b2277550e495045cf603",
+        "m_defaultSalt": "S85S6Y6hJSUfFzB65gXDJ68UWcRAkQQ9yQQPGc3KYs8DUSUGmEntrMgAG5rKnBey", // DOUBLE CHECK
+        "m_kyP1": 123456789, // DOUBLE CHECK
+        "m_ivP1": 987654321, // DOUBLE CHECK
 
-        "m_defaultSalt": "S85S6Y6hJSUfFzB65gXDJ68UWcRAkQQ9yQQPGc3KYs8DUSUGmEntrMgAG5rKnBey",
-        "m_kyP1": 123456789,
-        "m_ivP1": 987654321
+        "_": "don't use me"
     },
     "listeners": [
         {

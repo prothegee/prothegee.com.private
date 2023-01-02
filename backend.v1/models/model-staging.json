@@ -1,7 +1,7 @@
 {
-    "rdbms": "postgresql",
-    "host": "127.0.0.1",
-    "port": 5432,
+    "rdbms": "postgresql", // DOUBLE CHECK
+    "host": "127.0.0.1", // DOUBLE CHECK
+    "port": 5432, // DOUBLE CHECK
     "dbname": "prothegeedb", // DOUBLE CHECK
     "schema": "public", // DOUBLE CHECK
     "user": "postgres", // DOUBLE CHECK
