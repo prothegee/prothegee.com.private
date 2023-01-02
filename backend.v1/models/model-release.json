@@ -1,0 +1,10 @@
+{
+    "rdbms": "postgresql",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dbname": "prothegeedb", // DOUBLE CHECK
+    "schema": "public", // DOUBLE CHECK
+    "user": "postgres", // DOUBLE CHECK
+    "password": "pga123", // DOUBLE CHECK
+    "tables": []
+}

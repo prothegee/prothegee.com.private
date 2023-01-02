@@ -1,60 +1,31 @@
 {
     "custom_config": {
-        "envDevel": false,
-        "envStaging": true,
-        "envProduction": false,
-        "envDomain": "prothegee.com",
-        "envProjectName": "prothegee-com-backendv1",
-        "envProjectVersion": "v1.0.0",
-        "envMongoDbMainConnection": "mongodb://localhost:27017",
-        "envMongoDbMainDatabase": "prothegeedb_staging",
-        "envSparkPostApiSender": "no-reply@notification.prothegee.com",
-        "envSparkPostApiUrl": "https://api.sparkpost.com",
-        "envSparkPostApiTransmissionsPath": "/api/v1/transmissions",
-        "envSparkPostApiKey": "1d81570ce1910ce87576b2277550e495045cf603",
-        "m_defaultSalt": "wrvbgueGmUeYw5q5bmgZSDRVxAs6es2WVnGsCSNFscWJfVcPKwUHhnd9SL3wbMaf",
-        "m_kyP": 976573028,
-        "m_ivP": 279203156
-    },
-    "ssl": {
-        "cert": "../../prothegee.com.private/ssl/sectigo/widlcard/TBD.pem",
-        "key": "../../prothegee.com.private/ssl/sectigo/widlcard/TBD.pem",
-        "use_old_tls": false,
-        "conf": [
-            ["MinProtocol", "TLSv1.2"],
-            ["MaxProtocol", "TLSv1.3"],
-            ["-min_protocol ", "TLSv1.2"],
-            ["-max_protocol ", "TLSv1.3"],
-            ["Options", "-strict, -SessionTicket, Compression"],
-            ["Curves", "P-256:P-384"],
-            ["SignatureAlgorithms", "CDSA+SHA256:RSA+SHA256:DSA+SHA256"],
-            ["-dhparam", "../../prothegee.com.private/ssl/dhparam_prothegee_com.pem"],
-            ["DHParameters", "../../prothegee.com.private/ssl/dhparam_prothegee_com.pem"],
-            ["-cipher", "ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384"],
-            ["CipherString", "ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384"],
-            ["ChainCAFile", "../../prothegee.com.private/ssl/TBA/TBD/AAACertificateServices.crt"],
-            ["VerifyCAFile", "../../prothegee.com.private/ssl/TBA/TBD/AAACertificateServices.crt"],
-            ["RequestCAFile", "../../prothegee.com.private/ssl/TBA/TBD/AAACertificateServices.crt"],
-            ["-serverpref", "off"],
-            ["ServerPreference", "off"],
-            ["-no_ticket", "off"],
-            ["-SessionTicket", "off"]
-        ]
+        "m_isDevel": true,
+        "m_isStaging": false,
+        "m_isProduction": false,
+
+        "m_envPort": ":7001",
+        "m_envDomain": "localhost.com",
+        "m_envProjectName": "prothegee-com-backendv1",
+        "m_envProjectVersion": "v1.0.0",
+
+        "m_envMongoDbMainConnection": "mongodb://localhost:27017",
+        "m_envMongoDbMainDatabase": "prothegeedb_devel",
+
+        "m_envSparkPostApiSender": "no-reply@notification.prothegee.com",
+        "m_envSparkPostApiUrl": "https://api.sparkpost.com",
+        "m_envSparkPostApiTransmissionsPath": "/api/v1/transmissions",
+        "m_envSparkPostApiKey": "1d81570ce1910ce87576b2277550e495045cf603",
+
+        "m_defaultSalt": "S85S6Y6hJSUfFzB65gXDJ68UWcRAkQQ9yQQPGc3KYs8DUSUGmEntrMgAG5rKnBey",
+        "m_kyP1": 123456789,
+        "m_ivP1": 987654321
     },
     "listeners": [
         {
             "address": "0.0.0.0",
-            "port": 80,
-            "https": true,
-            "cert": "../../prothegee.com.private/ssl/sectigo/widlcard/TBD.pem",
-            "key": "../../prothegee.com.private/ssl/sectigo/widlcard/TBD.pem"
-        },
-        {
-            "address": "0.0.0.0",
-            "port": 443,
-            "https": true,
-            "cert": "../../prothegee.com.private/ssl/sectigo/widlcard/TBD.pem",
-            "key": "../../prothegee.com.private/ssl/sectigo/widlcard/TBD.pem"
+            "port": 7001,
+            "https": false
         }
     ],
     "mime": {
@@ -63,19 +34,19 @@
         "text/css": ["css", "css.map"],
         "text/javascript": ["js", "mjs", "js.map", "framework.js", "loader.js", "data", "wasm"]
     },
-    // // turn this on if available
-    // "db_clients": [
-    //     {
-    //         "rdbms": "postgresql",
-    //         "host": "localhost",
-    //         "port": 5432,
-    //         "dbname": "prthgdb", // DOUBLE CHECK
-    //         "user": "postgres", // DOUBLE CHECK
-    //         "passwd": "pga123", // DOUBLE CHECK
-    //         "is_fast": false,
-    //         "timeout": -1.0
-    //     }
-    // ],
+    // turn this on if available
+    "db_clients": [
+        {
+            "rdbms": "postgresql",
+            "host": "127.0.0.1",
+            "port": 5432,
+            "dbname": "prothegeedb", // DOUBLE CHECK
+            "user": "postgres", // DOUBLE CHECK
+            "passwd": "pga123", // DOUBLE CHECK
+            "is_fast": false,
+            "timeout": -1.0
+        }
+    ],
     "app": {
         "number_of_threads": 2, // DOUBLE CHECK
         "document_root": "../../prothegee.com.public",
@@ -86,31 +57,26 @@
         // max_connections: maximum connections number, 100000 by default
         "max_connections": 200000,
         // max_connections_per_ip: maximum connections number per clinet,0 by default which means no limit
-        "max_connections_per_ip": 12,
+        "max_connections_per_ip": 0,
         "log": {
             "log_path": "../logs/trace",
             "logfile_base_name": "prothegee-com-backendv1-trace",
             "log_size_limit": 100000000,
             "log_level": "TRACE"
         },
-        "run_as_daemon": true, // DOUBLE CHECK
-        "relaunch_on_error": true, // DOUBLE CHECK
+        "run_as_daemon": false, // DOUBLE CHECK
+        "relaunch_on_error": false, // DOUBLE CHECK
         "upload_path": "media",
         "use_sendfile": true,
         "use_gzip": true,
-        "gzip_static": true,
         "use_brotli": true,
-        "br_static": true,
         "static_files_cache_time": 6, // in second
-        "idle_connection_timeout": 60, // in second
+        "idle_connection_timeout": 12,
         "enable_server_header": true,
         "server_header_field": "drogonframework",
         "enable_date_header": true,
         "keepalive_requests": 0,
-        "pipelining_requests": 0,
-        "client_max_body_size": "1G",
-        "client_max_memory_body_size": "64K",
-        "client_max_websocket_message_size": "128K",
+        "br_static": true,
         "file_types": [
             "gif",
             "png",
@@ -164,7 +130,7 @@
             }
         },
         {
-            "name": "CInitialize",
+            "name": "CConfigurationCheck",
             "dependencies": [],
             "config":
             {
